@@ -180,6 +180,17 @@ espnet2.bin.lm_calc_perplexity
     :show-inheritance:
 
 
+.. _espnet2.bin.asr_inference_hidden:
+
+espnet2.bin.asr_inference_hidden
+--------------------------------
+
+.. automodule:: espnet2.bin.asr_inference_hidden
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
 .. _espnet2.bin.aggregate_stats_dirs:
 
 espnet2.bin.aggregate_stats_dirs
