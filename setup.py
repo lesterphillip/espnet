@@ -114,14 +114,15 @@ extras_require = {
 }
 
 dirname = os.path.dirname(__file__)
-version_file = os.path.join(dirname, "espnet_asr_extract", "version.txt")
+version_file = os.path.join(dirname, "espnet", "version.txt")
 with open(version_file, "r") as f:
     version = f.read().strip()
 setup(
-    name="espnet_asr_extract",
+    name="espnet",
     version=version,
-    url="http://github.com/lesterphillip/espnet_asr_extract",
-    author="Lester Violeta",
+    url="http://github.com/espnet/espnet",
+    author="Shinji Watanabe",
+    author_email="shinjiw@ieee.org",
     description="ESPnet: end-to-end speech processing toolkit",
     long_description=open(os.path.join(dirname, "README.md"), encoding="utf-8").read(),
     long_description_content_type="text/markdown",
