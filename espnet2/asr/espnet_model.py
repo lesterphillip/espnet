@@ -461,6 +461,14 @@ class ESPnetASRModel(AbsESPnetModel):
             nll = torch.cat(nll)
         assert nll.size(0) == total_num
         return nll
+    
+    def get_ctc(
+        self,
+        encoder_out: torch.Tensor,
+    ):
+        ys_hat = self.ctc.argmax(encoder_out).data
+        return ys_hat
+
 
     def _calc_att_loss(
         self,
